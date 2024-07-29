@@ -1,0 +1,776 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+  
+    font-family: "Bebas Neue", sans-serif;
+   
+     
+      
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/asset/img/header-image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    box-shadow: inset 0 0 390px 120px;
+    
+    
+}
+header::after{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.4;
+    
+}
+.header_box{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav{
+
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 1% 11%;
+  
+   margin-top: 10px;
+   
+   
+   
+  
+    
+}
+.nav img{
+    height: 40px;
+}
+.nav button{
+    width: 75px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(219, 3, 3);
+    color: white;
+    font-weight: bold;
+}
+.nav select{
+    width: 5vw;
+    height: 30px;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    margin-right: 13px;
+    padding: 2px;
+
+}
+.nav select option{
+    color: black;
+}
+.header_content{
+    margin: 12% auto;
+    color: white;
+    text-align: center;
+}
+.header_content h1{
+    font-size: 45px;
+    font-weight: bolder;
+    
+}
+.header_content p{
+    font-size: 20px;
+    font-style: normal;
+    
+}
+.email_subscribtion{
+    margin: 30px auto;
+    
+}
+.email_subscribtion input,.faq_email_subscribtion input {
+    height: 50px;
+    width: 350px;
+    padding: 10px;
+    background: #00000073;
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+}
+.email_subscribtion input::placeholder, .faq_email_subscribtion input::placeholder{
+    color: rgb(189, 189, 189);
+    font-size: 15px;
+}
+.email_subscribtion button,.faq_email_subscribtion button{
+    position: relative;
+    top:1px;
+    width: 145px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(219, 3, 3);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid rgb(219, 3, 3);
+    
+}
+.image{
+    color: white;
+}
+hr{
+    width: 100%;
+    height: 7px;
+    background: #272727;
+    border: none;
+}
+
+.tv, .download,.watch,.kids{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    color: white;
+    padding: 100px 200px ;
+}
+.tv img{
+    width: 50rem;
+}
+.tv_content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.tv h1{
+    font-size: 60px;
+    font-weight: bolder;   
+}
+.download h1{
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.download p{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.watch img{
+    width: 45rem;
+}
+.watch_content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+.watch h1{
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.watch p{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.kids img{
+    width: 45rem;
+}
+.kids_content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+.kids h1{font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.kids p{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.faq{
+    background: #000;
+    color: white;
+    padding-bottom: 60px;
+}
+.faq h1{
+    font-size: 45px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 50px;
+}
+.p1r,.p2r, .p3r, .p4r, .p5r, .p6r{
+    display: none;
+    background: #272727;
+    margin: 15px 10px;
+    padding: 30px;
+    font-size: 20px;
+   
+}
+.faq h5{
+    background: #272727;
+    margin: 15px 10px;
+    padding: 30px;
+    font-size: 20px;color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.faq_content{
+    width: 75%;
+    margin: 0 auto;
+}
+.faq_content span{
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+.faq_email{
+    color: white;
+    text-align: center;
+    background: #000;
+    font-size: 20px;
+}
+footer{
+    width: 100%;
+ 
+    background: #000;
+    padding: 20px 0;
+}
+
+.footer_content{
+    width: 90%;
+    margin: 20px 50px;
+    padding: 0 200px;
+}
+.footer_row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.footer_col{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.footer_col a{
+    color: rgb(190, 190, 190);
+    margin-bottom: 30px;
+    font-weight: lighter;
+}
+.footer_content div{
+    color: rgb(190, 190, 190);
+    margin: 20px;
+}
+
+.footer_btn select{
+    width: 5vw;
+    height: 30px;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 2px;
+
+}
+.footer_btn select option{
+    color: black;
+}
+
+
+.sign_in{
+    width: 360px;
+    height: auto;
+    padding: 30px;
+    background: #000000ab;
+    color: white;
+    margin-top: 70px;
+    border-radius: 4px;
+}
+.sign_in h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.sign_in input{
+    width: 300px;
+    height: 40px;
+    margin: 10px 0;
+    background: #00000021;
+    border: 1px solid rgb(87, 87, 87);
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.sign_btn{
+    width: 300px;
+    height: 40px;
+    margin: 10px 0;
+    background: rgb(219, 3, 3);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.sign_in p{
+    text-align: center;
+    margin: 10px 0;
+}
+.sign_code_btn{
+    width: 300px;
+    height: 40px;
+    margin: 10px 0;
+    background: rgba(102, 102, 102, 0.418);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.forgot{
+    text-align: center;
+    margin: 10px 0;
+}
+.check{
+    display: flex;
+    align-items: center;
+}
+.check input{
+    width: 15px;
+    margin: o 10px;
+    background: #0000002d;
+}
+.check p{
+    margin: 10px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    header{
+     
+        height: 100vh;
+        background-size: cover;
+        box-shadow: inset 0 0 100px 50px;
+        
+        
+    }
+    header::after{
+        height: 100vh;
+        opacity: 0.3;
+        
+    }
+    .nav{
+
+       padding: 0% 6%;
+    }
+    .nav img{
+        height: 25px;
+    }
+ 
+    .nav select{
+        width: 15vw;
+        height: 30px;
+        background: transparent;
+        color: white;
+        border-radius: 5px;
+        margin-right: 13px;
+        padding: 2px;
+    
+    }
+    .header_content h1{
+        font-size: 30px;
+         }
+    .header_content p{
+        margin: 29px;
+        
+    }
+    .email_subscribtion{
+        margin: 30px auto;
+        
+    }
+    .email_subscribtion input,.faq_email_subscribtion input {
+        width: 320px;
+        margin-bottom: 10px;
+      
+    }
+
+
+.tv, .download,.watch,.kids{
+
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px ;
+}
+.tv p{
+    text-align: center;
+    margin: 20px;
+}
+.tv img{
+    width: 21rem;
+}
+.tv_content{
+    align-items: center;
+}
+.tv h1{
+    font-size: 40px;
+}
+.download h1{
+    font-size: 40px;
+    text-align: center;
+}
+.download p{
+    font-size: 20px;
+    text-align: center;
+}
+.watch img{
+    width: 22rem;
+}
+
+.watch h1{
+    font-size: 40px;
+    text-align: center;
+}
+.watch p{
+    font-size: 20px;
+    text-align: center;
+}
+.kids img{
+    width: 22rem;
+}
+.kids_content{
+    align-items: center;
+}
+.kids h1{
+  font-size: 40px;
+  text-align: center;
+}
+.kids p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.faq{
+    background: #000;
+    color: white;
+    padding-bottom: 60px;
+}
+.faq h1{
+    font-size: 30px;
+}
+
+.faq h5{
+    margin: 10px 0px;
+    padding: 20px;
+    font-size: 20px;color: white;
+  
+}
+.faq_content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.faq_email{
+    font-size: 15px;
+}
+    
+
+.footer_content{
+    width: 100%;
+    margin: 20px 0px;
+    padding: 0 20px;
+}
+.footer_row{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.footer_col{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.footer_col a{
+    color: rgb(190, 190, 190);
+    margin-bottom: 30px;
+    font-weight: lighter;
+}
+.footer_content div{
+    color: rgb(190, 190, 190);
+    margin: 20px;
+}
+
+.footer_btn select{
+    width: 5vw;
+    height: 30px;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 2px;
+
+}
+.footer_btn select option{
+    color: black;
+}  
+
+
+
+    .footer_row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer_col {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    header{
+     
+        height: 100vh;
+        background-size: cover;
+        box-shadow: inset 0 0 100px 50px;
+        
+        
+    }
+    header::after{
+        height: 100vh;
+        opacity: 0.3;
+        
+    }
+    .nav{
+
+       padding: 0% 6%;
+    }
+    .nav img{
+        height: 25px;
+    }
+ 
+    .nav select{
+        width: 15vw;
+        height: 30px;
+        background: transparent;
+        color: white;
+        border-radius: 5px;
+        margin-right: 13px;
+        padding: 2px;
+    
+    }
+    .header_content h1{
+        font-size: 30px;
+         }
+    .header_content p{
+        margin: 29px;
+        
+    }
+    .email_subscribtion{
+        margin: 30px auto;
+        
+    }
+    .email_subscribtion input,.faq_email_subscribtion input {
+        width: 320px;
+        margin-bottom: 10px;
+      
+    }
+
+
+.tv, .download,.watch,.kids{
+
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px ;
+}
+.tv p{
+    text-align: center;
+    margin: 20px;
+}
+.tv img{
+    width: 21rem;
+}
+.tv_content{
+    align-items: center;
+}
+.tv h1{
+    font-size: 40px;
+}
+.download h1{
+    font-size: 40px;
+    text-align: center;
+}
+.download p{
+    font-size: 20px;
+    text-align: center;
+}
+.watch img{
+    width: 22rem;
+}
+
+.watch h1{
+    font-size: 40px;
+    text-align: center;
+}
+.watch p{
+    font-size: 20px;
+    text-align: center;
+}
+.kids img{
+    width: 22rem;
+}
+.kids_content{
+    align-items: center;
+}
+.kids h1{
+  font-size: 40px;
+  text-align: center;
+}
+.kids p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.faq{
+    background: #000;
+    color: white;
+    padding-bottom: 60px;
+}
+.faq h1{
+    font-size: 30px;
+}
+
+.faq h5{
+    margin: 10px 0px;
+    padding: 20px;
+    font-size: 20px;color: white;
+  
+}
+.faq_content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.faq_email{
+    font-size: 15px;
+}
+    
+
+.footer_content{
+    width: 100%;
+    margin: 20px 0px;
+    padding: 0 20px;
+}
+.footer_row{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.footer_col{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.footer_col a{
+    color: rgb(190, 190, 190);
+    margin-bottom: 30px;
+    font-weight: lighter;
+}
+.footer_content div{
+    color: rgb(190, 190, 190);
+    margin: 20px;
+}
+
+.footer_btn select{
+    width: 5vw;
+    height: 30px;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 2px;
+
+}
+.footer_btn select option{
+    color: black;
+}  
+
+
+
+.sign_in{
+    width: 320px;
+    height: auto;
+    padding: 20px;
+    margin-top: -1px;
+   
+}
+.sign_in h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.sign_in input{
+    width: 260px;
+    height: 40px;
+    margin: 10px 0;
+    background: #00000021;
+    border: 1px solid rgb(87, 87, 87);
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.sign_btn{
+    width: 260px;
+   
+}
+
+.sign_code_btn{
+    width: 260px;
+   
+}
+
+
+.check input{
+    width: 15px;
+    margin: o 10px;
+    background: #0000002d;
+}
+.check p{
+    margin: 10px;
+}
+}
+
+
+
